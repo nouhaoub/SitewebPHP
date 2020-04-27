@@ -1,0 +1,79 @@
+
+
+ 
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Gestion de panier</title>
+  	     <meta charset=UTF-8>
+  	     	<link rel="stylesheet" href="feuille.css" type="text/css">
+</head>
+<body>
+<form action="<?php $_SERVER['PHP_SELF'] ?>" method="post"
+?enctype="application/x-www-form-urlencoded">
+<fieldset>
+<legend><b>Saisies d'articles</b></legend>
+<table>
+<tbody>
+<tr>
+<th>code : </th>
+<td><input type="text" name="code" /></td>
+</tr>
+<tr>
+<th>article : </th>
+<td><input type="text" name="article" /></td>
+</tr>
+<tr>
+<th>prix :</th>
+<td><input type="text" name="prix" /></td>
+</tr>
+<tr>6
+<td colspan="3">
+<input type="submit" name="envoi" value="AJOUTER" />
+<input type="submit" name="envoi" value="VERIFIER" />
+<input type="submit" name="envoi" value="ENREGISTRER" />
+<input type="submit" name="envoi" value="LOGOUT" />
+</td>
+</tr>
+</tbody>
+</table>
+
+
+</fieldset>
+</form>
+<?php
+  include "panier.php";
+  ?>
+
+</body>
+</html>
+  <style>
+  	body
+{
+    background-image: url("téléchargement.gif");
+}
+</style>
+<footer>
+	<div id="colum">
+<a href="Shippin.html">Shipping info</a><br>
+<a href="howtopay.html">How to pay</a><br>
+<a href="contact.html">Log In</a><br>	
+<a href="about.html">About Us</a><br>
+</div> <div id="follow">
+	   Follow Me<br><br>
+	<a href="www.facebook.com"><img src="téléchargement.png" alt="facebook"></a>
+	<a href="www.instagram.com"><img src="insta.gif" alt="instagram"></a>
+	<a href="www.twitter.com"><img src="téléchargement (1).png" alt="twitter"></a><br><span style="font-size: 20px;">©2020 NOUb</span>
+</div>
+      <div id="contact">
+	Contact Me<br><br>
+	Email:<input type="email" name="email" id="email" ><br><br>
+	message:<textarea placeholder="votre message"></textarea><br>
+	<input type="submit" name="valder" value="Envoyer" id="send">
+</div>
+</footer>
+</html>

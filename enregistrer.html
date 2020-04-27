@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset=UTF-8>
+  	<title></title>
+  	<style>
+  		 body{
+  	background-image:url("téléchargement.gif");
+  	   }
+  	     label {
+  	   
+  	   font-size: 200%;
+  	   position: relative;left: 200px;
+
+
+  }
+  div{position: relative;left: 350px;}
+  	input {
+  width: 30%;
+  padding: 12px 20px;
+  margin:8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: relative;left:100px;
+}
+input[type=submit] {
+  width: 10%;
+  background-color: grey;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+  span {
+       color:grey;
+       position: relative;left:95px;
+  }
+
+  	</style>
+  </head>
+  <body>
+     <div id="reg">
+     <form  name="form" method="post" >
+       <label><i>créer un nouveau compte</i></label><br><br>
+       <input  type="text" name="prenom" id="p"  placeholder="Prenom"  required><br><br>
+       <input  type="text" name="nom" id="n"  placeholder="Nom " required><br><br>
+       <input type="text" name="email" size=50 id="em" placeholder="Email "  required><br>
+       <span></span><br>
+        <input  type="text" name="num_tel" id="t"  placeholder=" Numero de téléphone" required ><br>
+        <span></span><br>
+         <input  type="text" name="adresse" id="a"  placeholder="Adresse" required ><br><br>
+       <input type="password" name="pwd" id="pw"  placeholder="Mot de passe  " required><br>
+       <span></span><br>
+       <input type="submit" name="register" value="S'enregistrer">
+     </form>
+     </div>
